@@ -64,13 +64,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\AbiObject.cs" />
+    <Compile Include="ABI\AddressTypeEncoder.cs" />
+    <Compile Include="ABI\BytesTypeEncoder.cs" />
+    <Compile Include="Util\UnitConversion.cs" />
+    <Compile Include="Util\ByteUtil.cs" />
+    <Compile Include="ABI\HexByteConvertorExtensions.cs" />
+    <Compile Include="ABI\IntTypeDecoder.cs" />
+    <Compile Include="ABI\IntTypeEncoder.cs" />
+    <Compile Include="ABI\ITypeDecoder.cs" />
+    <Compile Include="ABI\ITypeEncoder.cs" />
+    <Compile Include="DTO\JsonObj.cs" />
+    <Compile Include="Util\NumberExtensions.cs" />
+    <Compile Include="DTO\ParamData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ABI\StringTypeEncoder.cs" />
+    <Compile Include="ABI\TypeDecoder.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
